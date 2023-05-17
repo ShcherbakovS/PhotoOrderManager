@@ -6,13 +6,12 @@ import org.springframework.stereotype.Component;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
 
 @Component
 public class MailService {
-    public void sendEmail(Order order) throws IOException, MessagingException {
+    public void sendEmail(Order order) throws MessagingException {
         StringBuilder buildMyMessage =new StringBuilder();
         buildMyMessage.append(order.getOrderText());
 
@@ -21,12 +20,10 @@ public class MailService {
                     .append(order.getOrderConfirmURL());
         }
 
-//        String user = "Lina67830@yandex.ru";
-//        String password = "uettlsraqakqfsrp";
-        String user = "sherbakoff.s2014@yandex.ru";
-        String password = "bsshexwskxdgchxk";
+        String user = "";
+        String password = "";
 
-        String to = "Linok1@mail.ru";
+        String to = "";
         String smtpHost = "smtp.yandex.ru";
         Integer port = 465;
 
