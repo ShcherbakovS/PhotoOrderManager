@@ -1,7 +1,6 @@
 package com.ElinPhoto.PhotoOrderManager.service;
 
 import com.ElinPhoto.PhotoOrderManager.config.BotConfig;
-import com.ElinPhoto.PhotoOrderManager.model.Order;
 import lombok.Data;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -265,7 +264,7 @@ public class TelegramBot extends TelegramLongPollingBot {
     private void whereIsMyOrder(long chatId) {
         SendMessage sendMessage = new SendMessage();
         sendMessage.setText("Если ты заказал и оплатил фотографии, но на твою почту письмо не пришло:\n" +
-                " 1. Проверь папку Спам и поищи письмо от электронного адреса Linok1@mail.ru\n" +
+                " 1. Проверь папку Спам и поищи письмо от электронного адреса \n" +
                 " 2. Проверь корзину\n" +
                 " 3. Если письма нет нигде, то отправь Боту сообщение, в котором укажи:\n" +
                             "- Номер детского сада\n" +

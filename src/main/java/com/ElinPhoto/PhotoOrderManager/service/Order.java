@@ -1,4 +1,4 @@
-package com.ElinPhoto.PhotoOrderManager.model;
+package com.ElinPhoto.PhotoOrderManager.service;
 
 import lombok.Data;
 import org.springframework.stereotype.Component;

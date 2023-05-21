@@ -1,7 +1,6 @@
 package com.ElinPhoto.PhotoOrderManager.service;
 
 
-import com.ElinPhoto.PhotoOrderManager.model.Order;
 import org.springframework.stereotype.Component;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
